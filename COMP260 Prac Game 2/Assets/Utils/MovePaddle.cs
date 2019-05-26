@@ -74,7 +74,11 @@ public class MovePaddle : MonoBehaviour {
           }
           rigidbody.velocity = vel;
       **/
-    }
+    }
+
+
+
+
 
     private Vector3 GetMousePosition()
     {
@@ -94,5 +98,6 @@ public class MovePaddle : MonoBehaviour {
         Gizmos.color = Color.yellow;
         Vector3 pos = GetMousePosition();
         Gizmos.DrawLine(Camera.main.transform.position, pos);
-    }
+    }
+
 }
