@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: ef12764d086c114428cc34a765df0360
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Fantasque Sans Mono
+  fontNames:
+  - Fantasque Sans Mono
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5352c3e62626c8e498050017c4277222, type: 3}
+  - {fileID: 12800000, guid: e080aef96ee39cb49a286f761d984cb8, type: 3}
+  - {fileID: 12800000, guid: d56be77dc06239e479d1c45234bbee86, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

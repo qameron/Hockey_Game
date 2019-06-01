@@ -9,6 +9,7 @@ public class PuckControl : MonoBehaviour
     private AudioSource audio;
     public Transform startingPos;
     private Rigidbody rigidbody;
+    public int tester = Scorekeeper.test;
     void Start()
     {
         audio = GetComponent<AudioSource>();
@@ -20,6 +21,11 @@ public class PuckControl : MonoBehaviour
         rigidbody.velocity = Vector3.zero;
         // teleport to the starting position
         rigidbody.MovePosition(startingPos.position);
+        if (tester == 1)
+        {
+            rigidbody.angularVelocity = Vector3.zero;
+            rigidbody.velocity = Vector3.zero;
+        }
     }
 
     public AudioClip paddleCollideClip;
@@ -41,6 +47,7 @@ public class PuckControl : MonoBehaviour
 
 
     // Update is called once per frame
+    
     void Update () {
 		
 	}
