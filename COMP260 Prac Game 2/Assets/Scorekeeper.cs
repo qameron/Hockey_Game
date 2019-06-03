@@ -9,10 +9,12 @@ public class Scorekeeper : MonoBehaviour
     static public Scorekeeper Instance
     {
         get { return instance; }
-    }
+    }
+
     public int pointsPerGoal = 1;
     private int[] score = new int[2];
-    public Text[] scoreText;    public Text WinnerText;
+    public Text[] scoreText;
+    public Text WinnerText;
     static public int test = 0;
 
 
@@ -21,15 +23,18 @@ public class Scorekeeper : MonoBehaviour
         score[player] += pointsPerGoal;
         scoreText[player].text = score[player].ToString();
 
-        if(score[player] == 1)
+        if(score[player] == 10)
         {
             GameOver(player);
         }
-    }    public void GameOver(int player)
+    }
+
+    public void GameOver(int player)
     {
         WinnerText.text = "PLAYER " + player + " Wins!";
-        test = 1;
-    }
+        Time.timeScale = 0;
+    }
+
     void Start()
     {
         if (instance == null)
@@ -48,6 +53,7 @@ public class Scorekeeper : MonoBehaviour
         {
             score[i] = 0;
             scoreText[i].text = "0";
-        }
+        }
+
     }
 }

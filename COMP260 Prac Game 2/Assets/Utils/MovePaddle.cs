@@ -20,19 +20,13 @@ public class MovePaddle : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (tester == 0)
-        {
-            print(tester);
-            rigidbody.angularVelocity = Vector3.zero;
-            rigidbody.velocity = Vector3.zero;
-        }
-        else
-        {
+     
+         
+    
             Vector3 movedir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            // print(movedir);
             rigidbody.AddForce(movedir * forceAmount);
         }
-    }
+
 
     void FixedUpdate()
     {
